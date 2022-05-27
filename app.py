@@ -11,7 +11,7 @@ book_list = pickle.load(open('book_list.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return 'Hello World'
+    return 'Welcome to bookify backend. Go to https://github.com/HustleAura/Bookify to use Bookify'
 
 
 @app.route('/user', methods=['POST'])
