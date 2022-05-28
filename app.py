@@ -42,7 +42,7 @@ def image_url():
     if book_title == 'no result found':
         return jsonify({'image_url': 'no result found'})
     else:
-        imager = book_list[book_list['book_title'] == book_title]['img_s']
+        imager = book_list[book_list['book_title'] == book_title]['img_l']
         image = imager.to_json()
         return jsonify({'image_url': image})
 
