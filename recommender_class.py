@@ -26,7 +26,7 @@ class RecommenderClass:
 
     # utility functions for using the recommendation algorithm in various ways
     def user_recommendation(self, book_title):
-        return self.recommender(book_title)[1:4]
+        return self.recommender(book_title)[1:7]
 
     def search_recommendation(self, book_title):
         return self.recommender(book_title)[0:18]
